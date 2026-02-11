@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fdecef;
+  text-align: center;
+  padding: 40px;
+}
+
+/* العنوان */
+.title {
+  color: #c9184a;
+  font-size: 36px;
+}
+
+.subtitle {
+  color: #e95e5e;
+  margin-bottom: 40px;
+}
+
+/* الكاردات */
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  box-shadow: 0 10px 25px rgb(194, 85, 103);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #fff0f3;
+}
+
+/* صفحات الرسائل */
+.message-box {
+  background: white;
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.message-box h1 {
+  color: #c9184a;
+}
+
+.message-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+.back {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background: #c9184a;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.line{
+   position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #ff5c8a;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 80px auto;
+  padding-left: 40px;
+}
+
+
+
+.event {
+  position: relative;
+  width: 45%;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 40px 0;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* يمين ويسار */
+.event.right {
+  left: 55%;
+  text-align: left;
+}
+
+.event.left {
+  left: 0;
+  text-align: right;
+}
+
+/* الدوائر */
+.dot {
+  position: absolute;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background-color: #ff5c8a;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event.right .dot {
+  left: -30px;
+}
+
+.event.left .dot {
+  right: -30px;
+}
+
+/* تفاعل */
+.event:hover .dot {
+  transform: scale(1.4);
+  box-shadow: 0 0 10px #ff5c8a;
+}
+.special-dates{
+  margin-top: 30px;
+  color:#e722cd;
+  font-size:30px ;
+  font-family:initial ;
+  
+}
+.note{
+  right: 20%;
+    text-align:center;
+    justify-items: right;
+    justify-content: right;
+    color:#6d6875 ;
+}
