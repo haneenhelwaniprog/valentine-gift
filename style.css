@@ -5,7 +5,7 @@ body {
   padding: 40px;
 }
 
-/* العنوان */
+
 .title {
   color: #c9184a;
   font-size: 36px;
@@ -14,9 +14,10 @@ body {
 .subtitle {
   color: #e95e5e;
   margin-bottom: 40px;
+  font-size:30px;
 }
 
-/* الكاردات */
+
 .reasons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -100,7 +101,7 @@ body {
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-/* يمين ويسار */
+
 .event.right {
   left: 55%;
   text-align: left;
@@ -111,7 +112,7 @@ body {
   text-align: right;
 }
 
-/* الدوائر */
+
 .dot {
   position: absolute;
   top: 20px;
@@ -131,7 +132,7 @@ body {
   right: -30px;
 }
 
-/* تفاعل */
+
 .event:hover .dot {
   transform: scale(1.4);
   box-shadow: 0 0 10px #ff5c8a;
@@ -150,3 +151,40 @@ body {
     justify-content: right;
     color:#6d6875 ;
 }
+.yes {
+  background-color: #ff4d6d;
+  color: white;
+  margin-right: 15px;
+}
+
+.yes:hover {
+  transform: scale(1.1);
+}
+
+.no {
+  background-color: #ddd;
+}
+.container {
+  background: white;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+}
+button {
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+h1 {
+  color: #ff4d6d;
+  margin-bottom: 30px;
+}
+.buttons {
+  margin-top: 20px;
+}
+
