@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #fdecef;
+  background: linear-gradient(to right,#ff9a9e,#fad0c4);
   text-align: center;
   padding: 40px;
 }
@@ -187,4 +187,5 @@ h1 {
 .buttons {
   margin-top: 20px;
 }
+
 
